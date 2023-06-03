@@ -19,7 +19,7 @@ class RegistrationTest {
         $("[data-test-id='phone'] .input__control").setValue("+79200000000");
         $("[data-test-id='agreement']").click();
         $(withText("Забронировать")).click();
-        $("[data-test-id='notification']").shouldBe(visible, Duration.ofMillis(15000));
+        $("[data-test-id='notification']").shouldBe(visible, Duration.ofMillis(13000));
     }
 }
 
